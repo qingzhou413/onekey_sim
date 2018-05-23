@@ -46,7 +46,6 @@ func main() {
 func buildEvent(ble string, blt string, typeStr string) []byte {
 	var data = make([]byte, 44)
 
-
 	index := 0
 	// header
 	byteutil.PutShortToBuffer(data, uint16(0x8546), index)
